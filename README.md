@@ -21,7 +21,7 @@ In this folder, you will find projects related to computer networking, including
 - **Network Configurations** - Various network configurations and simulations done in Cisco Packet Tracer.
 - **Packet Sniffing Tool** - A tool for capturing and analyzing network packets, displaying details like source and destination IP addresses, protocols, and payload data.
   
-[Go to Computer Networks folder](./Computer%20Networks)
+[Go to Computer Networks folder](./Computer%20networks)
 
 ---
 
