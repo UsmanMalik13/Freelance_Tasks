@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream World</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="images/Ice-World.jpeg">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .ice-cream-theme {
+            background-color: #87CEEB; /* Light blue color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Styling the main navigation bar */
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #87CEEB !important; /* Change navbar background color on hover */
+            color: black; /* Change text color on hover */
+        }
+
+        /* Styling the sections */
+        section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        /* Custom CSS for link */
+        a.arrow-link {
+            color: black;
+            text-decoration: none;
+        }
+        .icecream-theme {
+            background-color: #87CEEB; /* Sky blue background */
+            color: white;
+        }
+
+        .icecream-theme th,
+        .icecream-theme td {
+            border-color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Area -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-ice-cream me-2"></i>Ice Cream World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heading-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#example-table-section">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#icecream-sales-section">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#image-section">Ice Creams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#icecream-sales-section">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fourth-section">Quality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-section">End</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading Section -->
+    <section id="heading-section" class="py-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center ice-cream-theme">
+                    <h1>Welcome to Ice Cream World</h1>
+                    <p>Indulge in the world of delightful ice creams at Ice Cream World! From classic flavors to exotic
+                        creations, we have something to satisfy every ice cream lover's craving.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-10 offset-md-1">
+                    <h1>Introduction</h1>
+                    <p>Welcome to the enchanting realm of Ice Cream World, where every scoop is a burst of happiness
+                        crafted with love and the finest ingredients. Our menu is a treasure trove of flavors, featuring
+                        beloved classics and innovative creations that cater to every palate. Indulge in our creamy
+                        Chocolate Delight, a symphony of rich chocolate flavors; savor the sweetness of our Vanilla
+                        Dream, a timeless classic loved by all; or embark on a flavor adventure with our Mango Tango, a
+                        tropical paradise in every bite.<br>
+
+                        But the journey doesn’t end there. Our Strawberry Sensation is a berry delight that captures
+                        the essence of summer; our Minty Marvel is a refreshing blast of coolness; and our Caramel
+                        Heaven is a decadent treat for the senses. Each ice cream is a testament to our unwavering
+                        commitment to quality and flavor, ensuring that every scoop is a memorable experience.<br>
+
+                        At Ice Cream World, we’re not just about ice cream; we’re about creating moments of joy and
+                        connection. Our cheerful ambiance invites you to relax and indulge, while our friendly staff
+                        ensures your every need is met with a smile. Whether you’re celebrating a special occasion or
+                        simply treating yourself to a sweet escape, Ice Cream World is your go-to destination for frozen
+                        delight.<br>
+
+                        We understand that your cravings can strike at any moment, which is why we offer a range of
+                        convenient ordering options. Whether you prefer to enjoy your ice cream in-store, take it to go,
+                        or have it delivered straight to your doorstep, we’ve got you covered. Our commitment to
+                        customer satisfaction is unwavering, and we strive to exceed your expectations with every order.<br>
+
+                        Join us at Ice Cream World, where every scoop is a celebration and every visit is an adventure.
+                        Discover the magic of our ice creams, where each flavor tells a story, and every spoonful is a
+                        moment of bliss. We’re more than just an ice cream parlor; we’re a destination, a sanctuary, and
+                        a haven for those who appreciate the art of frozen treats. Welcome to Ice Cream World, where
+                        every day is a sundae and every moment is sweet.</p>
+                </div>
+            </div>
+            <!-- Back to Top Link -->
+            <div class="row">
+                <div class="col text-end">
+                    <a href="#heading-section" class="arrow-link"><i
+                            class="fa-sharp fa-solid fa-circle-up fa-bounce"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Table Section -->
+    <section id="example-table-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Our Menu</h2>
+                    <div class="table-responsive">
+                        <table class="table  table-hover table-striped">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Flavor</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chocolate Delight</td>
+                                    <td>Rich and creamy chocolate ice cream.</td>
+                                    <td>$4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Vanilla Dream</td>
+                                    <td>Smooth and velvety vanilla ice cream.</td>
+                                    <td>$4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Mango Tango</td>
+                                    <td>Tropical mango-flavored ice cream with real fruit pieces.</td>
+                                    <td>$5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Strawberry Sensation</td>
+                                    <td>Fresh and fruity strawberry ice cream.</td>
+                                    <td>$5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pink Sauced Ice Cream</td>
+                                    <td>Pink Suce-flavored ice cream.</td>
+                                    <td>$5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Nutty Caremal Ice Cream</td>
+                                    <td>Indulgent caramel-flavored ice cream with swirls of caramel sauce and nuts.</td>
+                                    <td>$6.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to Top Link -->
+            <div class="row">
+                <div class="col text-end">
+                    <a href="#heading-section" class="arrow-link"><i
+                            class="fa-sharp fa-solid fa-circle-up fa-bounce"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Ice Cream Sales Tables Section -->
+<section id="icecream-sales-section" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Table 1 -->
+                <h3>Australian Ice Cream Sales by State</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered icecream-theme table-hover table-striped">
+                        <!-- Table 1 content goes here -->
+                        <thead>
+                            <tr>
+                                <th scope="col">State</th>
+                                <th scope="col">NSW</th>
+                                <th scope="col">VIC</th>
+                                <th scope="col">QLD</th>
+                                <th scope="col">WA</th>
+                                <th scope="col">SA</th>
+                                <th scope="col">TAS</th>
+                                <th scope="col">NT</th>
+                                <th scope="col">ACT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Ice Cream Sales ($M)</th>
+                                <td>32.6</td>
+                                <td>23.6</td>
+                                <td>28.7</td>
+                                <td>19.2</td>
+                                <td>15.6</td>
+                                <td>10.6</td>
+                                <td>7.7</td>
+                                <td>9.7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Profit ($M)</th>
+                                <td>3.6</td>
+                                <td>2.6</td>
+                                <td>8.7</td>
+                                <td>9.2</td>
+                                <td>1.6</td>
+                                <td>0.6</td>
+                                <td>1.7</td>
+                                <td>0.7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <!-- Table 2 -->
+                <h3>Australian Ice Cream Sales by Type and Method</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered icecream-theme table-hover table-striped">
+                        <!-- Table 2 content goes here -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Season</th>
+                                <th scope="col">Jan</th>
+                                <th scope="col">Feb</th>
+                                <th scope="col">Mar</th>
+                                <th scope="col">Apr</th>
+                                <th scope="col">May</th>
+                                <th scope="col">Jun</th>
+                                <th scope="col">Jul</th>
+                                <th scope="col">Aug</th>
+                                <th scope="col">Sep</th>
+                                <th scope="col">Oct</th>
+                                <th scope="col">Nov</th>
+                                <th scope="col">Dec</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Sales ($M)</th>
+                                <td>28.9</td>
+                                <td>24.7</td>
+                                <td>21.4</td>
+                                <td>10.3</td>
+                                <td>4.3</td>
+                                <td>2.3</td>
+                                <td>2.4</td>
+                                <td>4.9</td>
+                                <td>5.1</td>
+                                <td>6.9</td>
+                                <td>12.8</td>
+                                <td>23.7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Costs ($M)</th>
+                                <td>23.3</td>
+                                <td>20.1</td>
+                                <td>17.2</td>
+                                <td>8.2</td>
+                                <td>3.4</td>
+                                <td>1.8</td>
+                                <td>1.9</td>
+                                <td>4</td>
+                                <td>4.1</td>
+                                <td>5.6</td>
+                                <td>10.3</td>
+                                <td>19.1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Profits ($M)</th>
+                                <td>5</td>
+                                <td>20.1</td>
+                                <td>17.2</td>
+                                <td>8.2</td>
+                                <td>3.4</td>
+                                <td>1.8</td>
+                                <td>1.9</td>
+                                <td>4</td>
+                                <td>4.1</td>
+                                <td>5.6</td>
+                                <td>10.3</td>
+                                <td>19.1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Back to Top Link -->
+        <div class="row">
+            <div class="col text-end">
+                <a href="#heading-section" class="arrow-link"><i
+                        class="fa-sharp fa-solid fa-circle-up fa-bounce"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Image Section -->
+    <section id="image-section" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <img src="images/all Items.jpg" alt="all Items" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="images/Flavours.jpg" alt="Flavours" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="images/Oreo Disks COne.jpg" alt="Oreo Disks Cone" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="images/Strawberry valila cone.jpg" alt="Strawberry Valila Cone" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Our Ice Creams</h2>
+                    <p>Explore our mouth-watering ice cream flavors, crafted with the finest ingredients!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/pink sauce Scoop.jpg" alt="Pink Sauced Ice Cream" class="img-fluid mb-3">
+                    <p>Pink Sauced</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Choco Vanila cone.jpg" alt="Choco and Vanila Ice Cream" class="img-fluid mb-3">
+                    <p>Choco Delight and Vanila Dream</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Sauced scoop.jpg" alt="Nutty Caremal Ice Cream" class="img-fluid mb-3">
+                    <p>Nutty Caramel</p>
+                </div>
+            </div>
+            <!-- Back to Top Link -->
+            <div class="row">
+                <div class="col text-end">
+                    <a href="#heading-section" class="arrow-link"><i
+                            class="fa-sharp fa-solid fa-circle-up fa-bounce"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Content Section -->
+    <section id="fourth-section" class="py-5">
+        <div class="container">
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="images/quality-ingredients.jpeg" style="max-width: 400px;" alt="Quality Ingredients"
+                        class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-6">
+                    <h3>Quality Ingredients</h3>
+                    <p>At Ice Cream World, we use only the finest ingredients to craft our ice creams. From fresh
+                        fruits to premium chocolates, we believe that quality is the key to creating unforgettable
+                        flavors. Each scoop is a testament to our commitment to excellence, ensuring that every bite
+                        is a moment of pure delight.</p>
+                </div>
+            </div>
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="images/customer-satisfaction.jpeg" style="max-width: 400px;"
+                        alt="Customer Satisfaction" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-6">
+                    <h3>Customer Satisfaction</h3>
+                    <p>At Ice Cream World, customer satisfaction is our top priority. We strive to create a welcoming
+                        environment where every guest feels valued and appreciated. From our friendly staff to our
+                        delicious treats, we aim to exceed your expectations and leave you with a smile on your face
+                        every time you visit.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/convenient-ordering.jpeg" style="max-width: 400px;" alt="Convenient Ordering"
+                        class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-6">
+                    <h3>Convenient Ordering</h3>
+                    <p>Ordering your favorite ice cream has never been easier with Ice Cream World. Whether you prefer
+                        to visit us in-store, order online for pickup, or have your treats delivered straight to your
+                        doorstep, we offer convenient options to suit your needs. Enjoy your favorite flavors exactly
+                        the way you want them, hassle-free.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Back to Top Link -->
+        <div class="container">
+            <div class="row">
+                <div class="col text-end">
+                    <a href="#heading-section" class="arrow-link"><i
+                            class="fa-sharp fa-solid fa-circle-up fa-bounce"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer-section" class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Ice Cream World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

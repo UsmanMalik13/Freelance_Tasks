@@ -1,0 +1,31 @@
+<%- include('header'); -%>
+
+<header>
+  <div class="container-fluid bg-info-subtle mb-4">
+    <div class="col-sm-8 mx-auto text-center py-2">
+      <h1 class="display-4">World of Ice Cream</h1>
+      <p class="lead">Feedback from ice cream lovers....</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Feedback List</h1>
+    <ul>
+      <% feedbacks.forEach(feedback => { %>
+        <li class="mb-3 p-3 bg-white rounded shadow-sm">
+          <strong>Name:</strong> <%= feedback.name %><br>
+          <strong>Favorite Ice Cream:</strong> <%= feedback.icecreamtype %><br>
+          <strong>Rating:</strong> <%= feedback.rating %><br>
+          <strong>Feedback:</strong> <%= feedback.feedback %><br>
+        </li>
+      <% }) %>
+    </ul>
+    <div class="text-center mt-4">
+      <a href="/" class="btn btn-primary">Go Back</a>
+    </div>
+  </div>
+</main>
+
+<%- include('footer'); -%>

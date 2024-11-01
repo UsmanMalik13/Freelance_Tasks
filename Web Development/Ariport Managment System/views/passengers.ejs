@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passengers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Passengers</h1>
+        <a href="/" class="btn btn-secondary mb-3">Back to Home</a>
+
+        <!-- Form to Add New Passenger -->
+        <h2>Add New Passenger</h2>
+        <form action="/passengers/add" method="POST">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+            <div class="mb-3">
+                <label for="passportNumber" class="form-label">Passport Number</label>
+                <input type="text" class="form-control" id="passportNumber" name="passportNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Passenger</button>
+        </form>
+
+        <!-- Table Displaying Passengers -->
+        <h2 class="my-4">Passenger List</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Passport Number</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(function(passenger) { %>
+                <tr>
+                    <td><%= passenger.PassengerID %></td>
+                    <td><%= passenger.FirstName %></td>
+                    <td><%= passenger.LastName %></td>
+                    <td><%= passenger.DateOfBirth %></td>
+                    <td><%= passenger.PassportNumber %></td>
+                    <td><%= passenger.Email %></td>
+                    <td><%= passenger.PhoneNumber %></td>
+                    <td>
+                        <a href="/passengers/edit/<%= passenger.PassengerID %>" class="btn btn-primary">Edit</a>
+                        <form action="/passengers/delete/<%= passenger.PassengerID %>" method="POST" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+        <!-- Form to Search Passenger by Last Name -->
+        <h2 class="my-4">Search Passenger</h2>
+        <form action="/passengers/search" method="GET">
+            <div class="mb-3">
+                <label for="searchLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="searchLastName" name="searchLastName">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</body>
+</html>

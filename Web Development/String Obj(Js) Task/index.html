@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- You will need to create this new JS file and place it in
+    the same directory as this HTML file (i.e., public_html) -->
+
+    <!-- <script src="icecreamTshirtText.js"></script> -->
+
+    <title>Ice Cream T-Shirt Printing</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-info-subtle mb-4">
+            <div class="col-sm-8 mx-auto text-center py-2">
+                <h1 class="display-4">World of Ice Cream</h1>
+                <p class="lead ">Putting text on our Ice Cream T-Shirts</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Ice Cream T-Shirt Printing - Text Processing</h3>
+
+            <p>
+                Please enter into the text-box below, what you would like
+                displayed on your T-Shirt. Then click the `Process Text` button
+                to show some interesting points about your text.
+            </p>
+
+            <form>
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    Example textarea:
+                </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+                <label for="Keyword" class="form-label mt-3 ">
+                    Keyword to search for:
+                </label>
+                <select class="form-select form-select" id="searchWord" aria-label="Large select example"
+                    name="Keyword">
+                    <!-- <option value="">Keyword to search for...</option> -->
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Love">Love</option>
+                    <option value="Fun">Fun</option>
+                </select>
+
+                <label for="customRange2" class="form-label mt-3">
+                    Number of characters in sub string (between 10 and
+                    50):
+                </label>
+                <input class="form-control" type="number" id="numberCharacters" name="customRange2" min="10" max="50"
+                    value="10">
+
+                <!-- Here are the BUTTON for processing the input using the `onclick` event -->
+                <input class="btn btn-primary my-3" type="button" onclick="processText()" value="Process Text">
+                <input class="btn btn-secondary my-3" type="reset" onclick="clearText()" value="Reset Text">
+            </form>
+
+            <!-- The table below has the fields identified using the `id` attributes -->
+            <table class="table table-info table-striped-columns table-bordered mt-3">
+                <thead>
+                    <th class="col-3">String operation...</th>
+                    <th class="col-9">Result obtained...</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-3">Length of string (# characters)</td>
+                        <td class="col-9" id="strResult1"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-3">String in all UPPERCASE</td>
+                        <td class="col-9" id="strResult2"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-3">String in all lowercase</td>
+                        <td class="col-9" id="strResult3"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-3">First occurance of '<em id="searchTerm" class="text-primary">???</em>'</td>
+                        <td class="col-9" id="strResult4"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-3">First <em class="text-primary" id="numberSubstringCharactersStart">_</em>
+                            characters of string</td>
+                        <td class="col-9" id="strResult5"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-3">Last <em class="text-primary" id="numberSubstringCharactersEnd">_</em>
+                            characters of string</td>
+                        <td class="col-9" id="strResult6"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <footer class="container-fluid text-center mt-4 p-2 bg-dark text-white">
+        <p>&copy; 2024 Ice Cream made chilled!</p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="icecreamTshirtText.js"></script>
+
+</body>
+
+</html>
